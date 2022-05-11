@@ -147,11 +147,14 @@ geometry3.computeVertexNormals();
  const mesh3 = new THREE.Mesh( geometry3, material3 );
  console.log(mesh3);
 
-// var wireFrame = new WireframeGeometry(geometry3);
-// var line = new LineSegments(wireFrame);
+var wireFrame = new WireframeGeometry(geometry3);
+console.log(wireFrame);
+var line = new LineSegments(wireFrame);
+console.log(line);
 
 
-// scene.add(line);
+
+ scene.add(line);
 scene.add(mesh3);
 //mesh3.geometry.attributes.position.setXYZ( 0, 10, 1, 1 );
 
@@ -181,7 +184,13 @@ length.onchange = function(){
     geometry3.attributes.position.setXYZ( 23, length.value,0,height );
     geometry3.attributes.position.setXYZ( 11,length.value,topWidth,height );
     geometry3.attributes.position.setXYZ( 17,length.value,topWidth,height );
-    
+    scene.remove(line);
+     wireFrame = new WireframeGeometry(geometry3);
+    line = new LineSegments(wireFrame);
+
+
+
+ scene.add(line);
     // mesh3.geometry.position.set
     
 }
