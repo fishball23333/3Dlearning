@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Custom HVAC Duct</title>
+  <link rel = "stylesheet" href = "./index.css">
+  <script async src="https://unpkg.com/es-module-shims@1.3.6/dist/es-module-shims.js"></script>
+  <script type="text/javascript" src="./node_modules/dat.gui/build/dat.gui.min.js"></script>
+  
+  <script type="importmap">
+    {
+      "imports": {
+        "three": "https://unpkg.com/three@0.126.1/build/three.module.js"
+      }
+  
+    }
+  </script>
+</head>
+
+<body>
+
+<label>顶边宽度
+<input type ="text" name="topwidth" id = "topwidth", placeholder=8>
+</label>
+<br>
+<label>顶边长度
+<input type = "text" name=" toplength" id = "toplength", placeholder=14>
+</label>
+<hr>
+
+
+<script type="module" src = ./index.js>
+</script> 
+</body>
+</html>
+
