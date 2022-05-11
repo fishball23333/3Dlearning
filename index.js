@@ -165,9 +165,9 @@ var a = "haha";
 width.onchange = function(){
     console.log(width.value);
     a = "papa";
-    geometry3.attributes.position.needsUpdate = true;
-    geometry3.attributes.position.setXYZ( 8, width.value, 5, 5 );
-    geometry3.attributes.position.setXYZ( 1, width.value, 3, 3 );
+    // geometry3.attributes.position.needsUpdate = true;
+    // geometry3.attributes.position.setXYZ( 8, width.value, 5, 5 );
+    // geometry3.attributes.position.setXYZ( 1, width.value, 3, 3 );
 }
 
 const length = document.getElementById("toplength");
